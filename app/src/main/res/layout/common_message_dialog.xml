@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:background="#9d000000"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/bg_rounded_corner_white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="22dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Message"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="left"
+            android:text="You have not completed  adding the selected product. Use ADD button to add the product to the basket or CONTINUE to disregard."
+            android:textColor="@color/dark_gray"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:weightSum="2"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_negative"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="38dp"
+                android:layout_marginRight="@dimen/margin_8dp"
+                android:background="@drawable/line_rounded_btn"
+                android:text="Cancel"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <Button
+                android:id="@+id/btn_positive"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="38dp"
+                android:background="@drawable/rounded_submit_btn_bg"
+                android:layout_marginLeft="8dp"
+                android:text="Ok"
+                android:textAllCaps="true"
+                android:textSize="16sp"
+                android:textColor="@color/app_white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

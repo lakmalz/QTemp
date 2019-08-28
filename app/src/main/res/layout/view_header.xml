@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/date_background"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:background="@color/dark_gray"
+                android:gravity="center">
+
+    <com.lakmalz.qtemper.utils.calendarview.VerticalTextView
+            android:id="@+id/txt_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="6dp"
+            android:text="APR"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_size_14sp"/>
+
+    <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/txt_header"
+            android:background="@color/app_white"/>
+
+</RelativeLayout>

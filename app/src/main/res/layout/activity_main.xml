@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_white"
+        tools:context=".views.activity.JobListActivity">
+
+        <LinearLayout
+                android:id="@+id/vw_calendar_container"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:background="@color/calendar_bg"
+                android:layout_height="60dp"/>
+
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_job_list"
+            android:layout_below="@+id/vw_calendar_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    <LinearLayout
+            android:id="@+id/vw_empty_container"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_below="@+id/vw_calendar_container"
+            android:layout_height="match_parent">
+
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="300dp"
+                   android:src="@drawable/empty_screen"/>
+
+        <TextView
+                android:text="Oops.... There are no jobs."
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/font_size_20sp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</RelativeLayout>

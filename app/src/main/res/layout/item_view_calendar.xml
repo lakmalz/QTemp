@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/date_background"
+    android:layout_width="wrap_content"
+    android:layout_height="60dp"
+    android:paddingRight="2dp"
+    android:paddingLeft="2dp"
+    android:background="@color/calendar_bg"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center"
+                android:text="WED"
+                android:layout_marginBottom="-4dp"
+                android:textAllCaps="true"
+                android:textColor="@color/calendar_txt"
+                android:textSize="@dimen/font_size_14sp" />
+
+            <TextView
+                android:id="@+id/txt_date"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_day"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="03"
+                android:textColor="@color/calendar_txt"
+                android:textSize="@dimen/font_size_18sp" />
+
+            <TextView
+                android:id="@+id/txt_month"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="APR"
+                android:layout_marginTop="-4dp"
+                android:textAllCaps="true"
+                android:textColor="@color/calendar_txt"
+                android:textSize="@dimen/font_size_14sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

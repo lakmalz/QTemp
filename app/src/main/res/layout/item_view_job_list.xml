@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:paddingLeft="@dimen/margin_16dp"
+              android:paddingRight="@dimen/margin_16dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+        <ImageView
+                android:id="@+id/img_vw_job_location"
+                android:layout_width="match_parent"
+                android:src="@drawable/sm"
+                android:scaleType="centerCrop"
+                android:layout_height="220dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/vw_title"
+            android:paddingTop="@dimen/margin_12dp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView
+                android:id="@+id/tv_title"
+                android:text="$13/u  Hotel De L'  ABC Anad gjh hsdjgh fsdffsaf sfas"
+                android:textStyle="bold"
+                android:bufferType="spannable"
+                android:textSize="@dimen/font_size_16sp"
+                android:textColor="@color/dark_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/margin_4dp"
+            android:layout_height="wrap_content">
+
+        <RatingBar
+                android:id="@+id/rating_bar"
+                android:layout_width="wrap_content"
+                android:numStars="5"
+                android:rating="3.4"
+                android:layout_gravity="center_vertical"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:id="@+id/tv_reviews"
+                android:text="295 reviews"
+                android:textSize="@dimen/font_size_16sp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/margin_8dp"
+                android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/margin_4dp"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:id="@+id/lbl_open"
+                android:text="1 open positie - 09:00(6u)"
+                android:textSize="@dimen/font_size_16sp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:id="@+id/lbl_views"
+                android:drawableLeft="@drawable/ic_group"
+                android:layout_width="wrap_content"
+                android:text="635"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/font_size_16sp"
+                android:layout_marginLeft="@dimen/margin_8dp"
+                android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>

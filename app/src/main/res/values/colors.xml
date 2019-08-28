@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00FF86</color>
+    <color name="colorPrimaryDark">#30A870</color>
+    <color name="colorAccent">#1EC67E</color>
+
+    <color name="button_selected">#228656</color>
+    <color name="calendar_bg">#535353</color>
+    <color name="calendar_txt">#fff</color>
+    <color name="app_white">#fff</color>
+    <color name="calendar_month_bg">#E6E6E6</color>
+    <color name="calendar_bg_selected">#FF7D1EDD</color>
+    <color name="dark_gray">#141414</color>
+    <color name="text_light_gray">#797979</color>
+    <color name="colorTransparent">#00000000</color>
+
+</resources>
