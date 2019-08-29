@@ -1,4 +1,12 @@
 # QTemp
+
+- Kotlin
+- Retrofit
+- RxJava, RxAndroid
+- MVVM
+- Dagger2
+
+
 ## Screens
 
 
